@@ -789,7 +789,7 @@ function walkPoint(startPoint, endPoint, handler, isSkipInnerOffset) {
     const isSkipOffset = isSkipInnerOffset &&
                        startPoint.node !== point.node &&
                        endPoint.node !== point.node;
-    point = nextPointWithEmptyNode(point, isSkipOffset);
+    point = nextPoint(point, isSkipOffset);
   }
 }
 
