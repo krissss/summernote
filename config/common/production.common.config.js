@@ -45,7 +45,7 @@ fs.readdirSync(path.resolve(__dirname, '../../lang')).forEach(file => {
 module.exports = {
   entries,
   output: {
-    publicPath: '/',
+    publicPath: './',
     path: path.join(__dirname, '../../dist'),
     libraryTarget: 'umd',
     filename: (chunkData) => {
